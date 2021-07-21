@@ -419,11 +419,6 @@
   dependencies:
     "@types/jasmine" "*"
 
-"@types/jquery@^2.0.40":
-  version "2.0.52"
-  resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-2.0.52.tgz#4edc00c5255631925a02dc1a19b30748dc178092"
-  integrity sha512-UJ3xu1c0WQLk7ZV7iO3RNduVOz0WK1PWUHY/LlmYTnln60hoUEGWPZ/9YzRRMIO6MDGMAs9hpDe7dR7aXQy/Vw==
-
 "@types/jquery@^3.3.21":
   version "3.3.29"
   resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-3.3.29.tgz#680a2219ce3c9250483722fccf5570d1e2d08abd"
@@ -771,13 +766,13 @@ amdefine@>=0.0.4:
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
   integrity sha1-SlKCrBZHKek2Gbz9OtFR+BfOkfU=
 
-angular-froala-wysiwyg@^2.8.5:
-  version "2.9.1"
-  resolved "https://registry.yarnpkg.com/angular-froala-wysiwyg/-/angular-froala-wysiwyg-2.9.1.tgz#519367bde68dd51d20826a8724bea9d6ba270225"
-  integrity sha512-DUyYvcPC4L7nLnTrOAQDd6Uq4176RnzSiD5ht+1wsPCdAopBuVrEbTAvTTTPnmIgujgv+/HPtcEB0kMBKKeW5w==
+angular-froala-wysiwyg@^3.0.0:
+  version "3.2.7"
+  resolved "https://registry.yarnpkg.com/angular-froala-wysiwyg/-/angular-froala-wysiwyg-3.2.7.tgz#f1dd51ed9c3a0cf5a12da755d38dc8832fa0d5f8"
+  integrity sha512-OP/6ima99YUlPKTlVmusSiD9AR5h6Ok7U4O09rfEdqREmECvvIjVKkcdpmUXowsBcv2n9cc41AA1A1AfrICxww==
   dependencies:
-    "@types/jquery" "^2.0.40"
-    froala-editor "2.9.1"
+    froala-editor "3.2.7"
+    tslib "^2.0.0"
 
 ansi-colors@^3.0.0:
   version "3.2.3"
@@ -2943,7 +2938,7 @@ follow-redirects@^1.0.0:
   dependencies:
     debug "=3.1.0"
 
-font-awesome@>=4.4.0, font-awesome@^4.7.0:
+font-awesome@^4.7.0:
   version "4.7.0"
   resolved "https://registry.yarnpkg.com/font-awesome/-/font-awesome-4.7.0.tgz#8fa8cf0411a1a31afd07b06d2902bb9fc815a133"
   integrity sha1-j6jPBBGhoxr9B7BtKQK7n8gVoTM=
@@ -3003,13 +2998,10 @@ fresh@0.5.2:
   resolved "https://registry.yarnpkg.com/fresh/-/fresh-0.5.2.tgz#3d8cadd90d976569fa835ab1f8e4b23a105605a7"
   integrity sha1-PYyt2Q2XZWn6g1qx+OSyOhBWBac=
 
-froala-editor@2.9.1:
-  version "2.9.1"
-  resolved "https://registry.yarnpkg.com/froala-editor/-/froala-editor-2.9.1.tgz#6487b55ad1db9ef0379bfeaa58b35534b28ad589"
-  integrity sha512-ZEyBnZ/J5w87pjh6F8pNdI0owJ8w3fvwqfOnfcVqHblBQ2A1yjeOfOEIsCUM3QbFscHqY2ChArRCfpDpGxy/Vw==
-  dependencies:
-    font-awesome ">=4.4.0"
-    jquery ">=1.11.0"
+froala-editor@3.2.7:
+  version "3.2.7"
+  resolved "https://registry.yarnpkg.com/froala-editor/-/froala-editor-3.2.7.tgz#fde6a3645727fc33daffdb376b7d158226974e36"
+  integrity sha512-/nHMuA/MYZnNx0TbrGnGJoiRuRHFN6JKtvfV6So0j3Ijwyj48s8NhU4AAzQx4ge8Jx5JmcHf5jJX4sDcJAU+CQ==
 
 from2@^2.1.0:
   version "2.3.0"
@@ -4085,7 +4077,7 @@ jasminewd2@^2.1.0:
   resolved "https://registry.yarnpkg.com/jasminewd2/-/jasminewd2-2.2.0.tgz#e37cf0b17f199cce23bea71b2039395246b4ec4e"
   integrity sha1-43zwsX8ZnM4jvqcbIDk5Uka07E4=
 
-jquery@>=1.11.0, jquery@^3.3.1:
+jquery@^3.3.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
   integrity sha512-Ubldcmxp5np52/ENotGxlLe6aGMvmF4R8S6tZjsP6Knsaxd/xp3Zrh50cG93lR6nPXyUFwzN3ZSOQI0wRJNdGg==
@@ -7192,6 +7184,11 @@ tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0:
   version "1.9.3"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.9.3.tgz#d7e4dd79245d85428c4d7e4822a79917954ca286"
   integrity sha512-4krF8scpejhaOgqzBEcGM7yDIEfi0/8+8zDRZhNZZ2kjmHJ4hv3zCbQWxoJGz1iw5U0Jl0nma13xzHXcncMavQ==
+
+tslib@^2.0.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.0.tgz#803b8cdab3e12ba581a4ca41c8839bbb0dacb09e"
+  integrity sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==
 
 tslint@~5.11.0:
   version "5.11.0"
